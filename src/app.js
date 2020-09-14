@@ -99,7 +99,7 @@ app.post('/products/:code/love', (request, response) => {
 app.get('/products/:code', (request, response) => {
   // TODO: Busca de todos os produtos com o código recebido por parâmetro.
   const {code} = request.params;
-  const product = products.filter(value => value.code === code); //SE MUDAR ESSE TRECHO PARA VALUE.CODE === 40, O TESTE É APROVADO
+  const product = products.filter(value => value.code == code); //SE MUDAR ESSE TRECHO PARA VALUE.CODE === 40, O TESTE É APROVADO
   
   //console.log(code); CONSOLE PARA ACOMPANHAR O VALOR DO CODE, NESSE CASO ELE TA IGUAL A 40
 
